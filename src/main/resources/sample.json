@@ -1,0 +1,389 @@
+{
+  "guitars": [
+    {
+      "name": "Fender Stratocaster",
+      "description": "Iconic electric guitar known for its versatile sound and sleek design.",
+      "price": 1500,
+      "id": 1,
+      "rate": 5,
+      "count": 10,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L99283000001000-00-600x600.jpg",
+      "type": "ELECTRIC",
+      "brand": "Fender"
+    },
+    {
+      "name": "Gibson",
+      "description": "Classic electric guitar with a rich, warm tone and a distinctive single-cutaway design.",
+      "price": 2000,
+      "id": 2,
+      "rate": 4,
+      "count": 8,
+      "imageUrl": "https://images.equipboard.com/uploads/item/image/12320/gibson-les-paul-standard-electric-guitar-xl.jpg?v=1715590807",
+      "type": "ELECTRIC",
+      "brand": "Gibson"
+    },
+    {
+      "name": "PRS SE Custom 24",
+      "description": "High-quality electric guitar with a versatile sound and stunning finishes.",
+      "price": 1800,
+      "id": 3,
+      "rate": 4,
+      "count": 12,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L79262000003000-00-600x600.jpg",
+      "type": "ELECTRIC",
+      "brand": "PRS"
+    },
+    {
+      "name": "Ibanez RG550",
+      "description": "Fast-playing electric guitar with a thin, shredder-friendly neck and powerful pickups.",
+      "price": 1300,
+      "id": 4,
+      "rate": 5,
+      "count": 15,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/K59743000001000-00-600x600.jpg",
+      "type": "ELECTRIC",
+      "brand": "Ibanez"
+    },
+    {
+      "name": "Taylor 214ce",
+      "description": "Beautiful acoustic-electric guitar with a balanced tone and comfortable playability.",
+      "price": 1600,
+      "id": 5,
+      "rate": 4,
+      "count": 9,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L69529000001000-00-600x600.jpg",
+      "type": "ACOUSTIC",
+      "brand": "Taylor"
+    },
+    {
+      "name": "Martin D-28",
+      "description": "Legendary acoustic guitar with rich, resonant tone and solid wood construction.",
+      "price": 2200,
+      "id": 6,
+      "rate": 5,
+      "count": 7,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/K40776000001000-00-600x600.jpg",
+      "brand": "Martin",
+      "type": "ACOUSTIC"
+    },
+    {
+      "name": "Epiphone Les Paul Standard",
+      "description": "Affordable yet high-quality electric guitar with classic Les Paul design and tone.",
+      "price": 700,
+      "id": 7,
+      "rate": 4,
+      "count": 10,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L79166000001000-00-600x600.jpg",
+      "brand": "Epiphone",
+      "type": "ELECTRIC"
+    },
+    {
+      "name": "Gretsch G5420T Electromatic",
+      "description": "Semi-hollow electric guitar with vintage style and versatile sound.",
+      "price": 1200,
+      "id": 8,
+      "rate": 4,
+      "count": 6,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L88823000004000-00-600x600.jpg",
+      "brand": "Gretsch",
+      "type": "ELECTRIC"
+    },
+    {
+      "name": "Jackson Soloist SLX",
+      "description": "High-performance electric guitar with fast neck and aggressive tone.",
+      "price": 1100,
+      "id": 9,
+      "rate": 5,
+      "count": 8,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L58295000006000-00-600x600.jpg",
+      "brand": "Jackson",
+      "type": "ELECTRIC"
+    },
+
+    {
+      "name": "Schecter Hellraiser C-1",
+      "description": "Versatile electric guitar with powerful active pickups and sleek design.",
+      "price": 1400,
+      "id": 10,
+      "rate": 4,
+      "count": 11,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/518471000127000-00-600x600.jpg",
+      "brand": "Schecter",
+      "type": "ELECTRIC"
+    },
+    {
+      "name": "ESP LTD EC-1000",
+      "description": "Solid and reliable electric guitar with comfortable playability and aggressive tone.",
+      "price": 1500,
+      "id": 11,
+      "rate": 5,
+      "count": 13,
+      "imageUrl": "https://example.com/ec1000.jpg",
+      "brand": "ESP LTD",
+      "type" : "ELECTRIC"
+
+    },
+    {
+      "name": "Yamaha Pacifica 112V",
+      "description": "Affordable yet high-quality electric guitar with versatile sound and comfortable playability.",
+      "price": 400,
+      "id": 12,
+      "rate": 4,
+      "count": 15,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/583500000003000-00-600x600.jpg",
+      "brand": "Yamaha",
+      "type": "ELECTRIC"
+    },
+    {
+      "name": "Cort Earth70",
+      "description": "Reliable and affordable acoustic guitar with warm, balanced tone and solid construction.",
+      "price": 300,
+      "id": 13,
+      "rate": 4,
+      "count": 10,
+      "imageUrl": "https://example.com/earth70.jpg",
+      "brand": "Cort",
+      "type": "ACOUSTIC"
+    },
+    {
+      "name": "Dean MLX",
+      "description": "Metal-friendly electric guitar with aggressive looks and powerful tone.",
+      "price": 600,
+      "id": 14,
+      "rate": 3,
+      "count": 8,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L81857000001000-00-2000x2000.jpg",
+      "brand": "Dean",
+      "type": "ELECTRIC"
+    },
+    {
+      "name": "Squier Classic Vibe '60s Stratocaster",
+      "description": "Affordable electric guitar with vintage style and classic Stratocaster tone.",
+      "price": 500,
+      "id": 15,
+      "rate": 4,
+      "count": 12,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L58602000002000-00-600x600.jpg",
+      "brand": "Fender",
+      "type": "ELECTRIC"
+    },
+    {
+      "name": "Kremona 100th Anniversary Cedar Nylon-String Classical Acoustic Guitar",
+      "description": "Classical guitar from Kremona",
+      "price": 4999,
+      "id": 16,
+      "rate": 3,
+      "count" : 61,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/100th-Anniversary-Cedar-Nylon-String-Classical-Acoustic-Guitar-Natural/M11242000001000-00-264x264.jpg",
+      "brand": "Kremona",
+      "type": "CLASSICAL"
+    },
+    {
+      "name": "Yamaha GC82 Handcrafted Classical Guitar",
+      "description": "Rich and Classical guitar from Yamaha",
+      "price" : 5000,
+      "id"  :  17,
+      "rate"  : 5,
+      "count" : 762,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/GC82-Handcrafted-Classical-Guitar-Cedar/J00164000001000-00-264x264.jpg",
+      "brand" : "Yamaha",
+      "type": "CLASSICAL"
+    },
+    {
+      "name"  : "Kremona Rosa Lucia Nylon-String Flamenco Acoustic Guitar",
+      "description" : "Rich and vibrant classical guitar from Kremona",
+      "price" : 0,
+      "id"  : 18,
+      "rate" : 3,
+      "count" : 18,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/Rosa-Lucia-Nylon-String-Flamenco-Acoustic-Guitar-Natural/M10083000001000-00-264x264.jpg",
+      "brand": "Kremona",
+      "type": "CLASSICAL"
+
+    }
+  ],
+  "amps": [
+    {
+      "name": "Marshall DSL40C",
+      "description": "Versatile tube amplifier known for its rich, British rock tone and built-in effects.",
+      "price": 800,
+      "id": 1,
+      "rate": 5,
+      "count": 6,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/K64638000000000-00-600x600.jpg",
+      "category": "Electric"
+    },
+    {
+      "name": "Fender Acoustic Junior",
+      "description": "Compact acoustic amplifier with clear, natural sound and onboard effects.",
+      "price": 400,
+      "id": 2,
+      "rate": 4,
+      "count": 5,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L77834000001000-00-600x600.jpg",
+      "category": "Acoustic"
+    },
+    {
+      "name": "Blackstar HT Stage 60",
+      "description": "Powerful and versatile tube amplifier with boutique-quality tone and built-in reverb.",
+      "price": 1000,
+      "id": 3,
+      "rate": 5,
+      "count": 8,
+      "imageUrl": "https://example.com/ht_stage60.jpg",
+      "category": "Electric"
+    },
+    {
+      "name": "Orange Crush 35RT",
+      "description": "Compact and portable solid-state amplifier with versatile tone and built-in tuner.",
+      "price": 300,
+      "id": 4,
+      "rate": 4,
+      "count": 9,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/J16413000001000-00-600x600.jpg",
+      "category": "Electric"
+    },
+    {
+      "name": "Roland JC-22",
+      "description": "Iconic solid-state amplifier known for its pristine clean tone and stereo chorus effect.",
+      "price": 500,
+      "id": 5,
+      "rate": 5,
+      "count": 7,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/J49410000001000-00-2000x2000.jpg",
+      "category": "Electric"
+    },
+    {
+      "name": "Vox AC15C1",
+      "description": "Classic tube amplifier with warm, dynamic tone and iconic British crunch.",
+      "price": 900,
+      "id": 6,
+      "rate": 4,
+      "count": 10,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/423619000001000-00-600x600.jpg",
+      "category": "Electric"
+    },
+    {
+      "name": "Peavey Envoy 110",
+      "description": "Affordable solid-state amplifier with versatile tone and built-in effects.",
+      "price": 250,
+      "id": 7,
+      "rate": 4,
+      "count": 6,
+      "imageUrl": "https://i.ebayimg.com/images/g/dZMAAOSwMeJkUrxE/s-l960.webp",
+      "category": "Electric"
+    }
+  ],
+  "accessories": [
+    {
+      "name": "Dunlop Tortex Picks",
+      "description": "High-quality guitar picks with a textured surface for superior grip and control.",
+      "price": 5,
+      "id": 1,
+      "rate": 5,
+      "count": 20,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/K36941000000000-00-600x600.jpg",
+      "category": "Picks",
+      "type": "Electric"
+    },
+    {
+      "name": "Levy's MSS2 Strap",
+      "description": "Comfortable and stylish guitar strap with adjustable length and premium leather construction.",
+      "price": 30,
+      "id": 2,
+      "rate": 4,
+      "count": 15,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L95650000000000-00-600x600.jpg",
+      "category": "Straps",
+      "type": "Electric"
+    },
+    {
+      "name": "Gator Transit Series Gig Bag",
+      "description": "Durable and protective gig bag with plush interior and water-resistant exterior.",
+      "price": 50,
+      "id": 3,
+      "rate": 5,
+      "count": 12,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L96281000001000-00-600x600.jpg",
+      "category": "Cases",
+      "type": "Electric"
+    },
+    {
+      "name": "Mogami Gold Instrument Cable",
+      "description": "Premium instrument cable with superior signal clarity and durability.",
+      "price": 40,
+      "id": 4,
+      "rate": 5,
+      "count": 18,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/333170000000084-00-600x600.jpg",
+      "category": "Cables",
+      "type": "Electric"
+    },
+    {
+      "name": "D'Addario EXL110 Strings",
+      "description": "High-quality electric guitar strings with a balanced tone and long-lasting durability.",
+      "price": 10,
+      "id": 5,
+      "rate": 5,
+      "count": 22,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/H71088000000000-00-600x600.jpg",
+      "category": "Strings",
+      "type": "Electric"
+    },
+    {
+      "name": "Hercules GS415B Guitar Stand",
+      "description": "Sturdy and reliable guitar stand with auto-grip system for secure instrument placement.",
+      "price": 25,
+      "id": 6,
+      "rate": 4,
+      "count": 14,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L00279000000000-00-600x600.jpg",
+      "category": "Stands",
+      "type": "Electric"
+    },
+    {
+      "name": "Gator GR-4L Rack Case",
+      "description": "Rugged rack case with durable construction and adjustable interior.",
+      "price": 100,
+      "id": 7,
+      "rate": 4,
+      "count": 8,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/546159000000498-00-600x600.jpg",
+      "category": "Racks",
+      "type": "Electric"
+    },
+    {
+      "name": "Planet Waves NS Capo",
+      "description": "Sleek and ergonomic guitar capo with adjustable tension for precise fretboard pressure.",
+      "price": 20,
+      "id": 8,
+      "rate": 4,
+      "count": 16,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/H88286000001000-00-600x600.jpg",
+      "category": "Capos",
+      "type": "Electric"
+    },
+    {
+      "name": "Snark SN-5 Tuner",
+      "description": "Compact and accurate guitar tuner with bright display and clip-on design.",
+      "price": 15,
+      "id": 9,
+      "rate": 5,
+      "count": 19,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/L84549000001000-00-600x600.jpg",
+      "category": "Tuners",
+      "type": "Electric"
+    },
+    {
+      "name": "Ernie Ball Polypro Strap",
+      "description": "Affordable and durable guitar strap with comfortable nylon construction.",
+      "price": 10,
+      "id": 10,
+      "rate": 4,
+      "count": 13,
+      "imageUrl": "https://media.guitarcenter.com/is/image/MMGS7/367253000001000-00-600x600.jpg",
+      "category": "Straps",
+      "type": "Electric"
+    }
+  ]
+}
