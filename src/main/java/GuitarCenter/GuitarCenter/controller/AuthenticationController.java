@@ -3,6 +3,8 @@ package GuitarCenter.GuitarCenter.controller;
 import GuitarCenter.GuitarCenter.model.Customer;
 import GuitarCenter.GuitarCenter.repository.CustomerRepository;
 import GuitarCenter.GuitarCenter.security.TokenService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -24,16 +26,19 @@ public class AuthenticationController {
         this.repo = repo;
     }
     @PostMapping("/signup")
-    public boolean signup(@RequestBody Customer customer){
-        try{
+    public ResponseEntity<String> signup(@RequestBody Customer customer) {
+        try {
+            if (repo.existsByEmail(customer.getEmail())) {
+                return new ResponseEntity<>("Email already exists", HttpStatus.CONFLICT);
+            }
+
             BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-            String password = passwordEncoder.encode(customer.getPassword());
-            customer.setPassword(password);
+            String encodedPassword = passwordEncoder.encode(customer.getPassword());
+            customer.setPassword(encodedPassword);
             repo.save(customer);
-            return true;
-        }
-        catch(Exception e){
-            throw new RuntimeException(e);
+            return new ResponseEntity<>("Signup successful", HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>("An error occurred: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 

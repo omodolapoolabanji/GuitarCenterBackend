@@ -14,3 +14,10 @@ spring:
   sql:
     init:
       mode: always
+
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

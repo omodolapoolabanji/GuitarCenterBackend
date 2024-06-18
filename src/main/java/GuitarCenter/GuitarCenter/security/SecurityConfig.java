@@ -49,7 +49,7 @@ public class SecurityConfig {
                 .cors(Customizer.withDefaults())
                 .csrf(x -> x.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(HttpMethod.POST, "/signup", "/login", "/orders").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/signup", "/login").permitAll()
                         .requestMatchers(HttpMethod.GET, "/items", "/items/guitars", "/items/accessories", "items/amps", "items/guitars/{idx}", "/items/search/{idx}").permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session

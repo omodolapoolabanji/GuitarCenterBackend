@@ -1,11 +1,14 @@
 package GuitarCenter.GuitarCenter.model;
+import java.util.List;
 
+import ch.qos.logback.classic.net.SMTPAppender;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @Table(schema = "guitars")
 @DiscriminatorColumn(name = "item_type", discriminatorType = DiscriminatorType.STRING)
-public abstract class Item {
+public  class Item {
     String name;
     String description;
     String imageUrl;
@@ -15,6 +18,7 @@ public abstract class Item {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
     int price;
+
 
 
     int rate;
@@ -33,6 +37,10 @@ public abstract class Item {
         this.count = count;
     }
 
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "order_id")
+    @JsonBackReference
+    private Order order;
 
     public String getName() {
         return name;
@@ -81,5 +89,14 @@ public abstract class Item {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
 }

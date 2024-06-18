@@ -1,7 +1,10 @@
 package GuitarCenter.GuitarCenter.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -11,30 +14,24 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private int itemId;
-    private String date;
-    private String address;
 
-    @ManyToOne
+    private String date;
+
+
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "customer_id")
+    @JsonBackReference
     private Customer customer;
 
-    @OneToMany
-    @JoinColumn(name = "item")
-    private List<Item> item;
-
-
+    @OneToMany(mappedBy = "order",  cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
+    private List<Item> items = new ArrayList<>();
     public Order(){
-
     }
 
-    public int getItemId() {
-        return itemId;
-    }
 
-    public void setItemId(int itemId) {
-        this.itemId = itemId;
-    }
+
+
 
     public String getDate() {
         return date;
@@ -44,18 +41,10 @@ public class Order {
         this.date = date;
     }
 
-    public String getAddress() {
-        return address;
-    }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public Order(int itemId, String date, String address){
-        this.itemId = itemId;
+    public Order(List<Item> items, String date){
+        this.items = items;
         this.date = date;
-        this.address = address;
     }
 
     public Long getId() {
@@ -66,19 +55,28 @@ public class Order {
         this.id = id;
     }
 
+//    public Customer getCustomer() {
+//        return customer;
+//    }
+//
+//    public void setCustomer(Customer customer) {
+//        this.customer = customer;
+//    }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> item) {
+        this.items = item;
+    }
+
+
     public Customer getCustomer() {
         return customer;
     }
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
-    }
-
-    public List<Item> getItem() {
-        return item;
-    }
-
-    public void setItem(List<Item> item) {
-        this.item = item;
     }
 }
