@@ -38,5 +38,5 @@ jobs:
       - name: Build and push the image
         run: |
           docker login --username omodolapoolabanji --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-          docker build -t ghcr.io/bolabanj/guitarshoppe:latest --file Dockerfile .  
-          docker push ghcr.io/bolabanj/guitarshoppe:latest 
+          docker build -t ghcr.io/omodolapoolabanji/guitarshoppe:latest --file Dockerfile .  
+          docker push ghcr.io/omodolapoolabanji/guitarshoppe:latest 
