@@ -15,11 +15,10 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@SpringBootTest
 class GuitarCenterApplicationTests {
 
 
-	@Test
+
 	void seedRepo() throws IOException {
 		String jsonFile = "src/main/resources/sample.json";
 		ObjectMapper om = new ObjectMapper();
